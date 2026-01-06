@@ -1,0 +1,130 @@
+{
+  "version": "2.2.0",
+  "name": "BONZOOKAA!",
+  "player": {
+    "baseHP": 100,
+    "baseDamage": 6,
+    "baseSpeed": 320,
+    "baseFireRate": 3.5,
+    "baseCritChance": 5,
+    "baseCritDamage": 150,
+    "basePickupRadius": 60,
+    "bulletSpeed": 800,
+    "acceleration": 3000,
+    "friction": 0.65,
+    "deadzone": 0.1,
+    "shieldRegenRate": 5,
+    "shieldRegenDelay": 3
+  },
+  "progression": {
+    "baseXP": 100,
+    "xpScale": 1.15,
+    "maxLevel": 0,
+    "skillPerLevel": 1,
+    "statPerLevel": 3
+  },
+  "waves": {
+    "vendorInterval": 5,
+    "vendorStart": 3,
+    "bossInterval": 10,
+    "eliteChance": 0.12,
+    "baseEnemyCount": 4,
+    "enemyCountScale": 0.6,
+    "scaleMode": "exponential",
+    "scaleBase": 1.12,
+    "scaleLinear": 0.08,
+    "eliteHPMult": 2.5,
+    "bossHPMult": 8
+  },
+  "economy": {
+    "scrapPerKill": 5,
+    "cellsPerKill": 3,
+    "bossScrapMult": 10,
+    "eliteScrapMult": 3
+  },
+  "loot": {
+    "baseDropChance": 0.05,
+    "bossDropChance": 1.0,
+    "eliteDropChance": 0.3,
+    "scrapDropChance": 0.12,
+    "rarityBias": {
+      "normal": {
+        "common": 1.0,
+        "uncommon": 1.0,
+        "rare": 0.8,
+        "epic": 0.35,
+        "legendary": 0.1,
+        "mythic": 0.02
+      },
+      "elite": {
+        "common": 0.6,
+        "uncommon": 0.9,
+        "rare": 1.4,
+        "epic": 0.9,
+        "legendary": 0.25,
+        "mythic": 0.05
+      },
+      "boss": {
+        "common": 0.2,
+        "uncommon": 0.6,
+        "rare": 1.2,
+        "epic": 1.0,
+        "legendary": 0.9,
+        "mythic": 0.25
+      }
+    }
+  },
+  "stash": {
+    "baseSlots": 56,
+    "maxSlots": 200
+  },
+  "effects": {
+    "damageNumbers": {
+      "baseSize": 16,
+      "critSize": 28,
+      "normalColor": "#ffffff",
+      "critColor": "#ffcc00",
+      "bigHitColor": "#ff6600",
+      "floatSpeed": 120,
+      "duration": 0.9,
+      "spread": 30
+    },
+    "screenShake": {
+      "enabled": true,
+      "killIntensity": 2,
+      "critIntensity": 4,
+      "bossIntensity": 10
+    }
+  },
+  "seedVersion": 1,
+  "depthScaling": {
+    "pivot": 50,
+    "early": {
+      "hpA": 0.008,
+      "hpP": 1.1,
+      "dmgA": 0.006,
+      "dmgP": 1.05,
+      "xpA": 0.01,
+      "xpP": 1.08
+    },
+    "late": {
+      "hpA": 0.025,
+      "hpP": 1.3,
+      "dmgA": 0.018,
+      "dmgP": 1.12,
+      "xpA": 0.018,
+      "xpP": 1.15
+    }
+  },
+  "freshness": {
+    "window": 8,
+    "penaltyBase": 0.25
+  },
+  "debug": {
+    "devHotkeys": true,
+    "logZoneSummary": true
+  },
+  "notes": {
+    "waves": "legacy_unused_in_exploration"
+  }
+}
